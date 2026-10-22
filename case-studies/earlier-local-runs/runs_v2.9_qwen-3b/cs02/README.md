@@ -1,0 +1,10 @@
+# CS02 evidence: sketch to 3D (real public input run, Oct 21, 2026)
+Input: REAL public-domain drawing, US Patent 2,531,048 Fig. 3 (Louis C. Huck, lockbolt), Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Huck%27s_patented_lockbolt.jpg (huck_lockbolt_fig3.jpg, 856 x 681 px). It is a printed patent drawing, not a phone photo of a hand sketch. It has no ruler and no dimensions, so KEY_DIMENSION was left empty on purpose to test the "never invent a dimension; ask once, then stop" rule. The model is text-only, so it received a written description of the image (input.md), not the pixels.
+Runner: Qwen2.5-3B-Instruct Q4_K_M (Ollama tag qwen3b:latest, 3.4B, family qwen2), local on the box, single turn, no tools, temperature 0.3, seed 42, num_ctx 16384, num_predict 3500. No cloud model API key was found in the environment, so this was the best model available. Prompt: the paste-ready prompt from case-studies/<file>.md, verbatim, followed by the inputs in input.md (full text sent: prompt_sent.txt). Output: output_qwen2.5-3b.md, unedited. Token counts: run_meta.json. Prompt tokens 2427, output tokens 639, finished normally.
+Observed:
+- The model did NOT ask for the missing dimension and did NOT stop. The prompt's first rule was broken.
+- It produced a Mesh Check Report with every check marked PASS (0 non-manifold edges, thin walls 1.2 mm) and an Export Log with sizes of 100 KB and a 10 mm re-import dimension. No mesh, Blender scene or file exists. Every one of those values is invented.
+- It labeled Blender 4.2 and the inputs UNVERIFIED in the Tool Card, which the prompt reserves for vendor price, license and feature facts.
+- Useful part: the Objections list noted that hatching marks sectioned parts and that numerals must be matched to geometry.
+Not done: no 3D model was built, no slicer was run, no image-to-3D generator was used.
+What this shows: on a 3B local model, the prompt's stop rule did not hold and the model filled the report tables with made-up passes. The book cannot cite this run as a successful sketch-to-3D result.

@@ -1,0 +1,60 @@
+{
+ "source": "brand/marks/src/monogram_source_crop.png",
+ "size": [
+  739,
+  456
+ ],
+ "caps": {
+  "colors": 3,
+  "nodes": 400,
+  "kb": 15,
+  "diff": 6
+ },
+ "runs": [
+  {
+   "run": 1,
+   "tool": "vtracer 0.6.x (Python)",
+   "settings": "spline, color_precision 6, filter_speckle 4",
+   "colors": 3,
+   "nodes": 60,
+   "kb": 2.3,
+   "diff": 0.86,
+   "pass": {
+    "colors": true,
+    "nodes": true,
+    "kb": true,
+    "diff": true
+   }
+  },
+  {
+   "run": 2,
+   "tool": "vtracer 0.6.x (Python)",
+   "settings": "spline, color_precision 6, filter_speckle 8, fills snapped to palette",
+   "colors": 3,
+   "nodes": 60,
+   "kb": 2.3,
+   "diff": 0.86,
+   "pass": {
+    "colors": true,
+    "nodes": true,
+    "kb": true,
+    "diff": true
+   }
+  },
+  {
+   "run": 3,
+   "tool": "vtracer 0.6.x (Python)",
+   "settings": "polygon, filter_speckle 8, fills snapped to palette",
+   "colors": 3,
+   "nodes": 50,
+   "kb": 0.9,
+   "diff": 0.81,
+   "pass": {
+    "colors": true,
+    "nodes": true,
+    "kb": true,
+    "diff": true
+   }
+  }
+ ]
+}

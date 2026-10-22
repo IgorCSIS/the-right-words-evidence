@@ -1,0 +1,17 @@
+{
+ "source": "sketch_synthetic.png (SYNTHETIC, script-drawn, single front view)",
+ "ruler_px_per_mm_measured": 10.0,
+ "outline_vertices": 8,
+ "scale_factor_to_80mm": 1.194,
+ "height_mm": 80.0,
+ "extents_mm": [
+  44.54,
+  80.0,
+  15.0
+ ],
+ "watertight": true,
+ "volume_cm3": 17.87,
+ "triangles": 28,
+ "min_wall_mm": 7.0,
+ "note": "Depth 15 mm is an assumption (single view). Min wall: arm widths drawn at 80 and 70 px = 8.0 and 7.0 mm before scaling; not measured on the mesh."
+}

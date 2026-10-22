@@ -1,0 +1,3 @@
+CS03 claude-fable-5-1 turn 1 0.3161 end_turn 7767
+CS03 claude-fable-5-1 turn 2 0.4614 end_turn 16201
+CS03 claude-fable-5-1 turn 3 0.7848 max_tokens 21473

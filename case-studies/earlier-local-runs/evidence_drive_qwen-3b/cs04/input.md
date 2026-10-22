@@ -1,0 +1,1 @@
+Input, from the real pipeline: IDEA "LinkedIn is not my lead channel right now; I cut to three days a week." PROOF "13 posts, about 208 impressions, roughly three in four views from my own network, 1 reaction, 1 real outside comment, 1 new follower" (from the author's measured audit). EXPERIMENT "open opinion question". LINK_POLICY no link in body. HASHTAG_POLICY none.

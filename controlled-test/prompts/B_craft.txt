@@ -1,0 +1,18 @@
+CONTEXT: I work full time and I am taking the CompTIA Security+ exam in
+4 weeks. I can study 1 hour on weekday evenings and 3 hours on
+Saturdays. Sundays are off. My first practice test score was 68%. My
+weakest areas were cryptography and network attacks. I already have the
+official study guide and access to one practice test bank.
+
+ROLE: You are a certification coach who helps working adults pass IT
+exams on limited time.
+
+ACTION: Build a 4-week study plan that fits my schedule, spends the most
+time on my weak areas, and includes practice tests to track progress.
+
+FORMAT: A table for each week with columns Day, Topic, Activity,
+Minutes. After the tables, three short lines on how to adjust if my
+practice scores do not improve.
+
+TONE: Practical and encouraging, like a coach who respects my time. No
+filler. Plain language.

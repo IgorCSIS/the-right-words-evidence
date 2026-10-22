@@ -1,0 +1,69 @@
+{
+ "test": "PT-03",
+ "prompt_source": "Ch6 A meta prompt you can use today (lines 1081-1103) [text from v2.15 manuscript]",
+ "model": "claude-fable-5-1",
+ "endpoint": "https://api.anthropic.com/v1/messages",
+ "turns": [
+  {
+   "timestamp": "2026-10-21T16:15:58.612747-07:00",
+   "prompt": "<mission>\nProduce a reusable prompt that reliably does turning my rough meeting notes into a client follow-up email for freelance bookkeepers who work with small restaurants.\n</mission>\n\n<task>\n1. Ask me up to five questions, one at a time, about the task,\n   audience, constraints, and what a great result looks like. Stop\n   asking when you have enough.\n2. Write the prompt with MASTER layers. Use [brackets] for inputs.\n3. Write three test inputs: typical, hard, and edge case.\n4. Predict how the prompt might fail on each and revise it to\n   prevent that.\n</task>\n\n<eval>\nThe prompt has a one-sentence mission, numbered steps, at least three\ncheckable eval criteria, and an exact output format. No layer is empty.\n</eval>\n\n<output>\nThe final prompt in a code block, then the three test inputs, then a\nlist of assumptions you made.\n</output>",
+   "output": "Great, let's start. First question:\n\n**What do your rough meeting notes typically look like, and what does the follow-up email most need to accomplish?**\n\nFor example: are your notes a few bullets with shorthand like \"Q3 sales tax \u2013 owner thinks overpaid \u2013 check POS export\"? And is the email mainly a recap of what was discussed, a list of who-does-what-by-when, a request for missing documents, or some mix? If you can paste a quick real-ish example of your notes, that would help a lot.",
+   "usage": {
+    "input_tokens": 307,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 312,
+    "output_tokens_details": {
+     "thinking_tokens": 152
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "model_returned": "claude-fable-5-1",
+   "stop_reason": "end_turn",
+   "raw_response": {
+    "model": "claude-fable-5-1",
+    "id": "msg_011CgGEWfgAJwEnfQWm1R7Wr",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+     {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "CAQS0wgKEAgTGAI4AUIIdGhpbmtpbmcSDGr4nerylQFAFmE6FxoMXNV6kWO6dporil1aIjASHK6Tbju+L5vaeqk6HVX0HTGXAL1s+UFYxadEIiHHPeeuOtnxygp2PkCu36laHjwq8Aciw6rL+RKXykYwWjMzUI+XWx3sJBH+5ylDF9ARM1Q0JuBSZ/K+w1cHzKyA2ey4F7kI4ztuW3nQE4FiGncNKk98sbY4AiaSbSR4C7v5m2hND3Slk78HvDP6iw0z/lgUUlV8GEEq7eZIzpTk/KIyT/NGmZ9wafIvGp2wavwfX2gbRWFhDyCJoL2bdKgnxfrRLi3AwmHB5KzoaaZEwzrLnzjWckgnh6Pvr2knXRNbhKl8aUiEr62j6IgBMkGddOj1AdFBUaIw+L0n8zRaSwGCXLI4R7ku74ESSwXzqOUlGPn90sf8N59RS/iC3BsdPm2/NTUq5gM29y07QBkqEmkFpLC2MeqUSa5xgvwpVEwNeehApoTeQbhmdvneH7DOMLnQiz8YyUI3kEUI0chshNzvK2c6VSRx+gP/QWFs+//arcSzM8Wqj+lL057Gol60XFxKfHrugfxXoynIfJlk3ATCJ2DHfOndCojVf7S6OsjbR4hZotJO6B+zGEsyp0hwb5OR7VLXcqMRtkioNmx6Yiu7xyOacHeTWntWjah2KVqLRskbzu45pB/g2N8Egk5h1t1gc1jxVPX2J2Dbg45ERPp8OEFcxKFcT0p/bl3BX4djw3RnaDtZM0sBNsCNaN+0z+aBG+gXmLCuTJx6s2ICUKdVxrtvzhAwWL/GpADHwoIrWFkXDL1+9OKr3J0SE8iMA/UaDDzNwD6KL6wyn+NXj7Olm5o+rIZbQ+yvMTWH1XiX9N3E0ULarDt0+uD+MmRmGqYQqcZebNZl6N96Byz0ma6IUdVhj8sptxA+37PDxpXHx/c+h4KIbjfn2r2kNOs1afi972ks7FNmgzCy5ovlgAdPq8ZCnT/8A8xfgwZV1zWJOLJWC9tnbiLxl8/u5yGVvIq1TMzVJPcLBjVfxqN4nU6gIC+zmKeYNWtv+DaLib1uTKS7ytDenocswXn/KQG1FIlQX+1taJlNip+JPEHdzN2VFPFwuq3GXXEjYlypKEveuyVCHhew4iGv8zNZlsG+ZsLfcb6Hua9N6phOYDzLw5pl4tlY6q2UgodvlDeFD1pPsr14HlYHNSwlUh3uQWfO22nfzS0d2tl1LwFljhY7sHkHp4/MRKVnwIOxFYztLxTEmMUArfWr0F5JsLApPGTZWItMOmZPoozcksaLdxKgeuUYb9bvtqO860iw1oJkdVZE7dw6PJHDZSog2f1S78W2xiXtXrvVPe/PxiNBf8R7NFWbblrNYmiYq8jDp9q2m+LgDs97dpbyVmHAEAIH/6qX77w8NQVk1fbuq+4morm4wwknHW4Q8NsZk4Ml13Si8SblsfDqUSirrb/R16G0EJlMfW5nL6UYAQ=="
+     },
+     {
+      "type": "text",
+      "text": "Great, let's start. First question:\n\n**What do your rough meeting notes typically look like, and what does the follow-up email most need to accomplish?**\n\nFor example: are your notes a few bullets with shorthand like \"Q3 sales tax \u2013 owner thinks overpaid \u2013 check POS export\"? And is the email mainly a recap of what was discussed, a list of who-does-what-by-when, a request for missing documents, or some mix? If you can paste a quick real-ish example of your notes, that would help a lot."
+     }
+    ],
+    "container": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+     "input_tokens": 307,
+     "cache_creation_input_tokens": 0,
+     "cache_read_input_tokens": 0,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+     },
+     "output_tokens": 312,
+     "output_tokens_details": {
+      "thinking_tokens": 152
+     },
+     "service_tier": "standard",
+     "inference_geo": "global",
+     "speed": "standard"
+    },
+    "diagnostics": null
+   }
+  }
+ ]
+}

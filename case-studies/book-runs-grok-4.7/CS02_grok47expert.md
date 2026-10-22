@@ -1,0 +1,7 @@
+Model: Grok 4.7 Expert (run by Igor 2026-10-21, fresh chat, drawing attached)
+Turn 1: asked once for the missing key dimension and stopped (screenshot CS02_turn1_ask.png). PASS on the ask-once rule.
+Turn 2 (Igor gave shank diameter 6.4 mm): Reference Sheet flagged no scale reference (FAIL, honest) and used 6.4 mm, 25.78 px/mm. Tool Card n/a (no generator). Grok said Blender 4.2 was not present, so it used a solid-of-revolution method. Mesh report: 0 non-manifold, 6144 triangles, all PASS. Export: STL 301 KB, GLB 109 KB, re-import shank 6.4 mm, length 26.6 mm, collar 12.0 mm, 0% scale error. Objections: 5 listed (approximated dome, estimated groove count, simplified collar, solid body, axial lengths from pixel proportions), 0 fixed.
+Caveats: the mesh report is Grok's self-report; I later downloaded the STL and GLB and checked them (see INDEPENDENT CHECK below). It ran a substitute for Blender. It produced STL and GLB files (screenshot CS02_turn2_files.png).
+
+INDEPENDENT CHECK (trimesh, on Grok's huck_lockbolt.stl, 2026-10-21): 6144 triangles (matches), watertight True, winding consistent True, 0 degenerate faces, volume 1308.76 mm3, extents 12.0 x 12.0 x 26.6 mm (matches the claimed length 26.6 and max diameter 12.0). Shank cross-sections at z=6.9 and 10.1 mm measure 6.4 mm diameter, so 0% scale error is confirmed. GLB not checked.
+GLB check: 6144 tris, watertight, extents 12.0 x 12.0 x 26.6 mm, 111,316 bytes (under 10 MB and 100k-triangle caps). Matches the STL.

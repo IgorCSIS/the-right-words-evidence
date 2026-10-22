@@ -1,0 +1,200 @@
+{
+ "test": "PT-06",
+ "prompt_source": "Ch10 Diverge, converge, dig (3-step chain, lines 1688-1702)",
+ "model": "grok-4.7",
+ "endpoint": "https://api.x.ai/v1/chat/completions",
+ "turns": [
+  {
+   "timestamp": "2026-10-21T15:36:42.199429-07:00",
+   "prompt": "Give me 10 topic ideas for a blog about organizing retreats.",
+   "output": "Here are 10 blog topic ideas for organizing retreats:\n\n1. **How to choose the right venue** \u2014 What to look for in location, capacity, amenities, and accessibility so the setting supports the retreat\u2019s goals.\n2. **Building a retreat budget that actually works** \u2014 A practical breakdown of costs (venue, food, facilitators, travel, contingency) and where people commonly overspend.\n3. **Designing a retreat schedule people won\u2019t resent** \u2014 Balancing sessions, free time, meals, and rest so participants leave energized instead of exhausted.\n4. **Theme and intention: giving the retreat a clear purpose** \u2014 How to pick a focus (wellness, leadership, creativity, team bonding) and weave it through every activity.\n5. **Food and dietary planning without the stress** \u2014 Handling allergies, preferences, and group meals so dining feels inclusive rather than logistical.\n6. **Facilitators vs. DIY: when to bring in outside help** \u2014 Pros and cons of hiring coaches, yoga teachers, or speakers versus running sessions yourself.\n7. **Pre-retreat communication that sets expectations** \u2014 What to send guests beforehand (packing lists, agendas, house rules) so day one runs smoothly.\n8. **Small-group activities that actually build connection** \u2014 Icebreakers, workshops, and outdoor options that work for introverts and extroverts alike.\n9. **Sustainability and low-impact retreat planning** \u2014 Reducing waste, choosing eco-friendly venues, and making the experience kinder to the local community.\n10. **Post-retreat follow-up that makes the experience stick** \u2014 Surveys, shared notes, accountability check-ins, and how to turn a weekend into lasting change.\n\nThese can work for wellness, corporate, creative, or spiritual retreats depending on the angle you take.",
+   "usage": {
+    "prompt_tokens": 1256,
+    "completion_tokens": 365,
+    "total_tokens": 1682,
+    "prompt_tokens_details": {
+     "text_tokens": 1256,
+     "audio_tokens": 0,
+     "image_tokens": 0,
+     "cached_tokens": 1152
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 61,
+     "audio_tokens": 0,
+     "accepted_prediction_tokens": 0,
+     "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 33400000
+   },
+   "model_returned": "grok-4.7",
+   "raw_response": {
+    "id": "4a1110d4-5bb1-988b-9dc0-b7149b87d9da",
+    "object": "chat.completion",
+    "created": 1792622202,
+    "model": "grok-4.7",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "Here are 10 blog topic ideas for organizing retreats:\n\n1. **How to choose the right venue** \u2014 What to look for in location, capacity, amenities, and accessibility so the setting supports the retreat\u2019s goals.\n2. **Building a retreat budget that actually works** \u2014 A practical breakdown of costs (venue, food, facilitators, travel, contingency) and where people commonly overspend.\n3. **Designing a retreat schedule people won\u2019t resent** \u2014 Balancing sessions, free time, meals, and rest so participants leave energized instead of exhausted.\n4. **Theme and intention: giving the retreat a clear purpose** \u2014 How to pick a focus (wellness, leadership, creativity, team bonding) and weave it through every activity.\n5. **Food and dietary planning without the stress** \u2014 Handling allergies, preferences, and group meals so dining feels inclusive rather than logistical.\n6. **Facilitators vs. DIY: when to bring in outside help** \u2014 Pros and cons of hiring coaches, yoga teachers, or speakers versus running sessions yourself.\n7. **Pre-retreat communication that sets expectations** \u2014 What to send guests beforehand (packing lists, agendas, house rules) so day one runs smoothly.\n8. **Small-group activities that actually build connection** \u2014 Icebreakers, workshops, and outdoor options that work for introverts and extroverts alike.\n9. **Sustainability and low-impact retreat planning** \u2014 Reducing waste, choosing eco-friendly venues, and making the experience kinder to the local community.\n10. **Post-retreat follow-up that makes the experience stick** \u2014 Surveys, shared notes, accountability check-ins, and how to turn a weekend into lasting change.\n\nThese can work for wellness, corporate, creative, or spiritual retreats depending on the angle you take.",
+       "reasoning_content": "I'm preparing 10 blog topic ideas for organizing retreats.",
+       "refusal": null
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1256,
+     "completion_tokens": 365,
+     "total_tokens": 1682,
+     "prompt_tokens_details": {
+      "text_tokens": 1256,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1152
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 61,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     },
+     "num_sources_used": 0,
+     "cost_in_usd_ticks": 33400000
+    },
+    "system_fingerprint": "fp_c60958d81f66f847",
+    "service_tier": "default"
+   }
+  },
+  {
+   "timestamp": "2026-10-21T15:36:49.833412-07:00",
+   "prompt": "Give me 5 specific blog post ideas for each of the 10 topics above.",
+   "output": "Here are 5 specific blog post ideas for each of the 10 topics.\n\n### 1. How to choose the right venue\n1. **The 12-point venue checklist I use before booking any retreat space** \u2014 Capacity, noise, Wi-Fi, accessibility, kitchen access, and the details hosts forget to ask.\n2. **City hotel vs. rural lodge vs. private home: which venue type fits your retreat goal** \u2014 A side-by-side comparison for wellness, corporate, and creative retreats.\n3. **How to evaluate a venue from photos and a virtual tour (when you can\u2019t visit in person)** \u2014 Red flags in listings and questions that reveal what the pictures hide.\n4. **Accessibility isn\u2019t optional: how to choose a retreat venue everyone can actually use** \u2014 Ramps, bathrooms, quiet rooms, and transportation from the nearest airport or station.\n5. **Negotiating venue contracts without getting burned** \u2014 Deposits, cancellation windows, damage clauses, and what \u201cexclusive use\u201d really means.\n\n### 2. Building a retreat budget that actually works\n1. **A sample retreat budget for 12, 25, and 50 people** \u2014 Line-item examples so readers can see where money actually goes.\n2. **The hidden costs of retreats (and how to budget for them)** \u2014 Gratuities, printing, last-minute dietary needs, transport, and the contingency fund.\n3. **How to price a retreat so you cover costs and still make a profit** \u2014 Early-bird tiers, scholarships, and what to include vs. charge extra for.\n4. **Where retreat organizers overspend \u2014 and three places worth spending more** \u2014 A honest look at AV, food, and facilitator fees.\n5. **Tracking retreat expenses in a simple spreadsheet** \u2014 Categories, formulas, and a post-event reconciliation habit that prevents surprise losses.\n\n### 3. Designing a retreat schedule people won\u2019t resent\n1. **Why your retreat schedule is too full (and a better daily template)** \u2014 Morning, afternoon, and evening blocks with built-in white space.\n2. **How much free time is enough? A guide by retreat length** \u2014 Rules of thumb for weekend, 3-day, and week-long programs.\n3. **Buffer time: the unsexy scheduling trick that saves every retreat** \u2014 Transitions, late arrivals, weather delays, and tech setup.\n4. **Designing schedules for mixed energy levels** \u2014 Options for early risers, night owls, introverts, and people who need naps.\n5. **Sample agendas for wellness, leadership, and creative retreats** \u2014 Three full schedules readers can adapt instead of starting from zero.\n\n### 4. Theme and intention: giving the retreat a clear purpose\n1. **How to write a one-sentence retreat intention guests can remember** \u2014 Examples that are specific without sounding corporate or vague.\n2. **Theme ideas for retreats that aren\u2019t \u201cfind your purpose\u201d** \u2014 Practical themes for teams, writers, founders, and friend groups.\n3. **Weaving a theme through meals, sessions, and the space** \u2014 Small touches that make the intention feel real, not decorative.\n4. **When your theme is too broad: how to narrow it before you market the retreat** \u2014 A simple test for whether the promise is clear enough to sell.\n5. **Letting participants shape the intention without losing the plan** \u2014 Pre-retreat surveys and opening circles that inform the weekend, not derail it.\n\n### 5. Food and dietary planning without the stress\n1. **The dietary questionnaire I send 3 weeks before every retreat** \u2014 What to ask, how to ask it, and how to turn answers into a kitchen brief.\n2. **Feeding a mixed group: vegetarian, gluten-free, and \u201cno restrictions\u201d on one menu** \u2014 Menu structures that don\u2019t require five separate meals.\n3. **Self-catered vs. private chef vs. venue catering: a cost and stress comparison** \u2014 Which option fits weekend retreats under 20 people.\n4. **Snack stations and hydration: the details that keep energy up between sessions** \u2014 What to stock, where to put it, and what to skip.\n5. **How to brief a caterer so dietary needs don\u2019t get lost** \u2014 A one-page kitchen handoff with names, restrictions, and meal timing.\n\n### 6. Facilitators vs. DIY: when to bring in outside help\n1. **Signs you should hire a facilitator instead of leading every session yourself** \u2014 Capacity, skill gaps, and the host-energy problem.\n2. **What to pay retreat facilitators in 2025 (and what\u2019s included)** \u2014 Day rates, travel, prep time, and materials.\n3. **How to brief an outside facilitator so they don\u2019t hijack your retreat** \u2014 Outcomes, audience, tone, and non-negotiables in a one-page brief.\n4. **DIY facilitation for first-time hosts: a simple session structure that works** \u2014 Opening, activity, debrief, close \u2014 without needing a coaching certification.\n5. **Co-hosting a retreat: how to split roles so nobody burns out** \u2014 Logistics lead vs. content lead, and how to handle disagreements in front of guests.\n\n### 7. Pre-retreat communication that sets expectations\n1. **The 4 emails I send before every retreat (and when I send them)** \u2014 Save-the-date, logistics, packing, and \u201csee you tomorrow.\u201d\n2. **What belongs on a packing list \u2014 and what just creates anxiety** \u2014 Climate, activities, optional extras, and what the venue already provides.\n3. **House rules guests are grateful you stated upfront** \u2014 Phones, alcohol, quiet hours, photos, and shared spaces.\n4. **How to share the agenda without locking yourself into a minute-by-minute script** \u2014 What to promise vs. what to keep flexible.\n5. **Arrival instructions that prevent the \u201cwhere do I go?\u201d chaos** \u2014 Parking, check-in, first-hour flow, and who to text if they\u2019re late.\n\n### 8. Small-group activities that actually build connection\n1. **Icebreakers that don\u2019t make adults want to leave** \u2014 Five low-pressure openers for groups who don\u2019t know each other.\n2. **Activities for introverts at retreats** \u2014 Pair work, written prompts, and optional participation that still builds trust.\n3. **Outdoor sessions that work even if the weather turns** \u2014 Backup plans that aren\u2019t just \u201cmove it inside and hope.\u201d\n4. **A 90-minute workshop template you can reuse for almost any theme** \u2014 Prompt, small-group work, share-back, and a concrete takeaway.\n5. **Evening activities that aren\u2019t forced fun** \u2014 Fireside options, quiet corners, and one optional group experience.\n\n### 9. Sustainability and low-impact retreat planning\n1. **A low-waste retreat setup: what to buy, borrow, and skip** \u2014 Reusables, name tags, printed materials, and welcome gifts.\n2. **How to choose a venue with a real sustainability practice (not just a green logo)** \u2014 Questions about energy, food sourcing, cleaning products, and waste.\n3. **Travel emissions: practical ways to reduce impact without guilting guests** \u2014 Train options, carpools, and longer stays vs. frequent short ones.\n4. **Working with local suppliers so the retreat benefits the place you visit** \u2014 Food, guides, and vendors within a short radius.\n5. **A simple post-retreat waste audit** \u2014 What got thrown away, what to change next time, and how to share it with guests without a lecture.\n\n### 10. Post-retreat follow-up that makes the experience stick\n1. **The 48-hour follow-up email that guests actually open** \u2014 Photos, one key takeaway, and a single clear next step.\n2. **Feedback surveys that get responses (and answers you can use)** \u2014 Five questions, timing, and how to ask about logistics vs. transformation.\n3. **How to turn retreat notes into something people revisit a month later** \u2014 Shared docs, voice memos, and a short \u201cwhat we decided\u201d summary.\n4. **Accountability without being annoying: check-ins after a goal-setting retreat** \u2014 Buddy systems, 30-day prompts, and when to stop emailing.\n5. **Using post-retreat feedback to plan the next one** \u2014 How to sort compliments from patterns, and what to change in the venue, schedule, or offer.",
+   "usage": {
+    "prompt_tokens": 1646,
+    "completion_tokens": 1769,
+    "total_tokens": 3615,
+    "prompt_tokens_details": {
+     "text_tokens": 1646,
+     "audio_tokens": 0,
+     "image_tokens": 0,
+     "cached_tokens": 1152
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 200,
+     "audio_tokens": 0,
+     "accepted_prediction_tokens": 0,
+     "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 133780000
+   },
+   "model_returned": "grok-4.7",
+   "raw_response": {
+    "id": "5ba9928a-9d06-96c5-a9d8-a62a6eef617c",
+    "object": "chat.completion",
+    "created": 1792622210,
+    "model": "grok-4.7",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "Here are 5 specific blog post ideas for each of the 10 topics.\n\n### 1. How to choose the right venue\n1. **The 12-point venue checklist I use before booking any retreat space** \u2014 Capacity, noise, Wi-Fi, accessibility, kitchen access, and the details hosts forget to ask.\n2. **City hotel vs. rural lodge vs. private home: which venue type fits your retreat goal** \u2014 A side-by-side comparison for wellness, corporate, and creative retreats.\n3. **How to evaluate a venue from photos and a virtual tour (when you can\u2019t visit in person)** \u2014 Red flags in listings and questions that reveal what the pictures hide.\n4. **Accessibility isn\u2019t optional: how to choose a retreat venue everyone can actually use** \u2014 Ramps, bathrooms, quiet rooms, and transportation from the nearest airport or station.\n5. **Negotiating venue contracts without getting burned** \u2014 Deposits, cancellation windows, damage clauses, and what \u201cexclusive use\u201d really means.\n\n### 2. Building a retreat budget that actually works\n1. **A sample retreat budget for 12, 25, and 50 people** \u2014 Line-item examples so readers can see where money actually goes.\n2. **The hidden costs of retreats (and how to budget for them)** \u2014 Gratuities, printing, last-minute dietary needs, transport, and the contingency fund.\n3. **How to price a retreat so you cover costs and still make a profit** \u2014 Early-bird tiers, scholarships, and what to include vs. charge extra for.\n4. **Where retreat organizers overspend \u2014 and three places worth spending more** \u2014 A honest look at AV, food, and facilitator fees.\n5. **Tracking retreat expenses in a simple spreadsheet** \u2014 Categories, formulas, and a post-event reconciliation habit that prevents surprise losses.\n\n### 3. Designing a retreat schedule people won\u2019t resent\n1. **Why your retreat schedule is too full (and a better daily template)** \u2014 Morning, afternoon, and evening blocks with built-in white space.\n2. **How much free time is enough? A guide by retreat length** \u2014 Rules of thumb for weekend, 3-day, and week-long programs.\n3. **Buffer time: the unsexy scheduling trick that saves every retreat** \u2014 Transitions, late arrivals, weather delays, and tech setup.\n4. **Designing schedules for mixed energy levels** \u2014 Options for early risers, night owls, introverts, and people who need naps.\n5. **Sample agendas for wellness, leadership, and creative retreats** \u2014 Three full schedules readers can adapt instead of starting from zero.\n\n### 4. Theme and intention: giving the retreat a clear purpose\n1. **How to write a one-sentence retreat intention guests can remember** \u2014 Examples that are specific without sounding corporate or vague.\n2. **Theme ideas for retreats that aren\u2019t \u201cfind your purpose\u201d** \u2014 Practical themes for teams, writers, founders, and friend groups.\n3. **Weaving a theme through meals, sessions, and the space** \u2014 Small touches that make the intention feel real, not decorative.\n4. **When your theme is too broad: how to narrow it before you market the retreat** \u2014 A simple test for whether the promise is clear enough to sell.\n5. **Letting participants shape the intention without losing the plan** \u2014 Pre-retreat surveys and opening circles that inform the weekend, not derail it.\n\n### 5. Food and dietary planning without the stress\n1. **The dietary questionnaire I send 3 weeks before every retreat** \u2014 What to ask, how to ask it, and how to turn answers into a kitchen brief.\n2. **Feeding a mixed group: vegetarian, gluten-free, and \u201cno restrictions\u201d on one menu** \u2014 Menu structures that don\u2019t require five separate meals.\n3. **Self-catered vs. private chef vs. venue catering: a cost and stress comparison** \u2014 Which option fits weekend retreats under 20 people.\n4. **Snack stations and hydration: the details that keep energy up between sessions** \u2014 What to stock, where to put it, and what to skip.\n5. **How to brief a caterer so dietary needs don\u2019t get lost** \u2014 A one-page kitchen handoff with names, restrictions, and meal timing.\n\n### 6. Facilitators vs. DIY: when to bring in outside help\n1. **Signs you should hire a facilitator instead of leading every session yourself** \u2014 Capacity, skill gaps, and the host-energy problem.\n2. **What to pay retreat facilitators in 2025 (and what\u2019s included)** \u2014 Day rates, travel, prep time, and materials.\n3. **How to brief an outside facilitator so they don\u2019t hijack your retreat** \u2014 Outcomes, audience, tone, and non-negotiables in a one-page brief.\n4. **DIY facilitation for first-time hosts: a simple session structure that works** \u2014 Opening, activity, debrief, close \u2014 without needing a coaching certification.\n5. **Co-hosting a retreat: how to split roles so nobody burns out** \u2014 Logistics lead vs. content lead, and how to handle disagreements in front of guests.\n\n### 7. Pre-retreat communication that sets expectations\n1. **The 4 emails I send before every retreat (and when I send them)** \u2014 Save-the-date, logistics, packing, and \u201csee you tomorrow.\u201d\n2. **What belongs on a packing list \u2014 and what just creates anxiety** \u2014 Climate, activities, optional extras, and what the venue already provides.\n3. **House rules guests are grateful you stated upfront** \u2014 Phones, alcohol, quiet hours, photos, and shared spaces.\n4. **How to share the agenda without locking yourself into a minute-by-minute script** \u2014 What to promise vs. what to keep flexible.\n5. **Arrival instructions that prevent the \u201cwhere do I go?\u201d chaos** \u2014 Parking, check-in, first-hour flow, and who to text if they\u2019re late.\n\n### 8. Small-group activities that actually build connection\n1. **Icebreakers that don\u2019t make adults want to leave** \u2014 Five low-pressure openers for groups who don\u2019t know each other.\n2. **Activities for introverts at retreats** \u2014 Pair work, written prompts, and optional participation that still builds trust.\n3. **Outdoor sessions that work even if the weather turns** \u2014 Backup plans that aren\u2019t just \u201cmove it inside and hope.\u201d\n4. **A 90-minute workshop template you can reuse for almost any theme** \u2014 Prompt, small-group work, share-back, and a concrete takeaway.\n5. **Evening activities that aren\u2019t forced fun** \u2014 Fireside options, quiet corners, and one optional group experience.\n\n### 9. Sustainability and low-impact retreat planning\n1. **A low-waste retreat setup: what to buy, borrow, and skip** \u2014 Reusables, name tags, printed materials, and welcome gifts.\n2. **How to choose a venue with a real sustainability practice (not just a green logo)** \u2014 Questions about energy, food sourcing, cleaning products, and waste.\n3. **Travel emissions: practical ways to reduce impact without guilting guests** \u2014 Train options, carpools, and longer stays vs. frequent short ones.\n4. **Working with local suppliers so the retreat benefits the place you visit** \u2014 Food, guides, and vendors within a short radius.\n5. **A simple post-retreat waste audit** \u2014 What got thrown away, what to change next time, and how to share it with guests without a lecture.\n\n### 10. Post-retreat follow-up that makes the experience stick\n1. **The 48-hour follow-up email that guests actually open** \u2014 Photos, one key takeaway, and a single clear next step.\n2. **Feedback surveys that get responses (and answers you can use)** \u2014 Five questions, timing, and how to ask about logistics vs. transformation.\n3. **How to turn retreat notes into something people revisit a month later** \u2014 Shared docs, voice memos, and a short \u201cwhat we decided\u201d summary.\n4. **Accountability without being annoying: check-ins after a goal-setting retreat** \u2014 Buddy systems, 30-day prompts, and when to stop emailing.\n5. **Using post-retreat feedback to plan the next one** \u2014 How to sort compliments from patterns, and what to change in the venue, schedule, or offer.",
+       "reasoning_content": "I will provide 5 specific blog post ideas for each of the 10 retreat topics.",
+       "refusal": null
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1646,
+     "completion_tokens": 1769,
+     "total_tokens": 3615,
+     "prompt_tokens_details": {
+      "text_tokens": 1646,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1152
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 200,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     },
+     "num_sources_used": 0,
+     "cost_in_usd_ticks": 133780000
+    },
+    "system_fingerprint": "fp_c60958d81f66f847",
+    "service_tier": "default"
+   }
+  },
+  {
+   "timestamp": "2026-10-21T15:37:21.117447-07:00",
+   "prompt": "Give me 25 ideas for posts, exercises, or handouts about running a silent morning on a corporate retreat.",
+   "output": "Here are 25 ideas for posts, exercises, or handouts about running a silent morning on a corporate retreat.\n\n1. **What a silent morning is (and isn\u2019t)** \u2014 A short explainer: no talking, no Slack, phones off or in a basket; walking, journaling, and breakfast still count. Not a meditation boot camp.\n2. **Why silence works on a work retreat** \u2014 A post on attention, fewer performative conversations, and how quiet time often surfaces better ideas than another brainstorm.\n3. **How long should it last?** \u2014 A guide comparing 45 minutes, 90 minutes, and a full morning, with who each length suits.\n4. **Sample silent-morning schedule** \u2014 A one-page timeline: wake window, optional stretch, silent breakfast, solo walk, journaling, and a clear \u201csilence ends\u201d cue.\n5. **The pre-retreat silence brief** \u2014 A handout sent in advance so people aren\u2019t surprised and can opt into a modified version if needed.\n6. **House rules card** \u2014 A pocket card: where silence applies, exceptions (safety, medical), phone policy, and who to tap if something\u2019s wrong.\n7. **Opt-out and modifications** \u2014 A post on making silence optional or partial (silent walk only, quiet breakfast with whispers allowed) so it doesn\u2019t feel punitive.\n8. **Phone basket protocol** \u2014 A how-to for collecting devices, labeling them, and the one emergency contact number posted on the wall.\n9. **Silent breakfast setup** \u2014 A handout for the kitchen and hosts: buffet flow, seating that doesn\u2019t force eye contact awkwardness, and a posted \u201cserve yourself, no chat\u201d sign.\n10. **Journaling prompts for a work retreat** \u2014 Ten prompts that stay professional: what I want from these two days, a decision I\u2019m avoiding, one working relationship I want to improve.\n11. **A silent walk route map** \u2014 A simple site map with a loop, distance, time estimate, and \u201cturn around if you need to\u201d notes.\n12. **Indoor alternatives if weather is bad** \u2014 A post listing quiet rooms, a reading corner, stretching, and a window-facing writing station.\n13. **Body scan or stretch script** \u2014 A one-page optional guide hosts can leave on chairs; no speaking required to follow it.\n14. **\u201cNotice and name\u201d worksheet** \u2014 A half-page exercise: three things I observed outside, one tension I\u2019m carrying into today, one thing I can let go of before sessions start.\n15. **Intention-setting card** \u2014 A small card people fill in silently: \u201cToday I want to be someone who ___.\u201d Collected or kept private\u2014say which.\n16. **How to signal that silence has started and ended** \u2014 A post on bells, a posted clock time, a host gesture, and why a vague \u201cwhenever you\u2019re ready\u201d creates anxiety.\n17. **Facilitator dos and don\u2019ts** \u2014 Don\u2019t whisper logistics in the hallway; do use signs. A checklist for the person running the morning.\n18. **What to do with people who hate silence** \u2014 A post on framing it as a focus block, offering a task (sketch the agenda, review notes), and not treating resistance as a character flaw.\n19. **Neurodiversity and silence** \u2014 A handout on headphones, fidgets, leaving early, and written instructions so the morning isn\u2019t only built for people who find quiet easy.\n20. **Safety and exceptions one-pager** \u2014 Medical needs, childcare check-ins, harassment concerns: silence never overrides safety, and here\u2019s who to find.\n21. **Transition into the first talking session** \u2014 An exercise: 5 minutes of paired shares (\u201cone thing I noticed\u201d) so the group doesn\u2019t slam from mute to a strategy meeting.\n22. **Debrief questions for later in the day** \u2014 Three prompts hosts can use after lunch: What was useful? What was uncomfortable? Should we do this again, shorter, or not at all?\n23. **Silent morning vs. digital detox** \u2014 A post separating the two so you don\u2019t accidentally ban note-taking apps or accessibility tools people rely on.\n24. **A packing and prep note for guests** \u2014 Layers for a walk, a notebook, pen, water bottle, and what not to bring into the silent block (laptop, unless it\u2019s an agreed writing tool).\n25. **After-action template for the organizer** \u2014 A one-page retro: start/end on time?, opt-outs, complaints, energy in the first session, and one change for next retreat.\n\nThese stay practical for a corporate setting: clear rules, an easy exit, and a clean handoff back into normal conversation.",
+   "usage": {
+    "prompt_tokens": 3446,
+    "completion_tokens": 964,
+    "total_tokens": 4500,
+    "prompt_tokens_details": {
+     "text_tokens": 3446,
+     "audio_tokens": 0,
+     "image_tokens": 0,
+     "cached_tokens": 1536
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 90,
+     "audio_tokens": 0,
+     "accepted_prediction_tokens": 0,
+     "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 109120000
+   },
+   "model_returned": "grok-4.7",
+   "raw_response": {
+    "id": "481295f3-a854-99c9-903c-069e025c3fff",
+    "object": "chat.completion",
+    "created": 1792622241,
+    "model": "grok-4.7",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "Here are 25 ideas for posts, exercises, or handouts about running a silent morning on a corporate retreat.\n\n1. **What a silent morning is (and isn\u2019t)** \u2014 A short explainer: no talking, no Slack, phones off or in a basket; walking, journaling, and breakfast still count. Not a meditation boot camp.\n2. **Why silence works on a work retreat** \u2014 A post on attention, fewer performative conversations, and how quiet time often surfaces better ideas than another brainstorm.\n3. **How long should it last?** \u2014 A guide comparing 45 minutes, 90 minutes, and a full morning, with who each length suits.\n4. **Sample silent-morning schedule** \u2014 A one-page timeline: wake window, optional stretch, silent breakfast, solo walk, journaling, and a clear \u201csilence ends\u201d cue.\n5. **The pre-retreat silence brief** \u2014 A handout sent in advance so people aren\u2019t surprised and can opt into a modified version if needed.\n6. **House rules card** \u2014 A pocket card: where silence applies, exceptions (safety, medical), phone policy, and who to tap if something\u2019s wrong.\n7. **Opt-out and modifications** \u2014 A post on making silence optional or partial (silent walk only, quiet breakfast with whispers allowed) so it doesn\u2019t feel punitive.\n8. **Phone basket protocol** \u2014 A how-to for collecting devices, labeling them, and the one emergency contact number posted on the wall.\n9. **Silent breakfast setup** \u2014 A handout for the kitchen and hosts: buffet flow, seating that doesn\u2019t force eye contact awkwardness, and a posted \u201cserve yourself, no chat\u201d sign.\n10. **Journaling prompts for a work retreat** \u2014 Ten prompts that stay professional: what I want from these two days, a decision I\u2019m avoiding, one working relationship I want to improve.\n11. **A silent walk route map** \u2014 A simple site map with a loop, distance, time estimate, and \u201cturn around if you need to\u201d notes.\n12. **Indoor alternatives if weather is bad** \u2014 A post listing quiet rooms, a reading corner, stretching, and a window-facing writing station.\n13. **Body scan or stretch script** \u2014 A one-page optional guide hosts can leave on chairs; no speaking required to follow it.\n14. **\u201cNotice and name\u201d worksheet** \u2014 A half-page exercise: three things I observed outside, one tension I\u2019m carrying into today, one thing I can let go of before sessions start.\n15. **Intention-setting card** \u2014 A small card people fill in silently: \u201cToday I want to be someone who ___.\u201d Collected or kept private\u2014say which.\n16. **How to signal that silence has started and ended** \u2014 A post on bells, a posted clock time, a host gesture, and why a vague \u201cwhenever you\u2019re ready\u201d creates anxiety.\n17. **Facilitator dos and don\u2019ts** \u2014 Don\u2019t whisper logistics in the hallway; do use signs. A checklist for the person running the morning.\n18. **What to do with people who hate silence** \u2014 A post on framing it as a focus block, offering a task (sketch the agenda, review notes), and not treating resistance as a character flaw.\n19. **Neurodiversity and silence** \u2014 A handout on headphones, fidgets, leaving early, and written instructions so the morning isn\u2019t only built for people who find quiet easy.\n20. **Safety and exceptions one-pager** \u2014 Medical needs, childcare check-ins, harassment concerns: silence never overrides safety, and here\u2019s who to find.\n21. **Transition into the first talking session** \u2014 An exercise: 5 minutes of paired shares (\u201cone thing I noticed\u201d) so the group doesn\u2019t slam from mute to a strategy meeting.\n22. **Debrief questions for later in the day** \u2014 Three prompts hosts can use after lunch: What was useful? What was uncomfortable? Should we do this again, shorter, or not at all?\n23. **Silent morning vs. digital detox** \u2014 A post separating the two so you don\u2019t accidentally ban note-taking apps or accessibility tools people rely on.\n24. **A packing and prep note for guests** \u2014 Layers for a walk, a notebook, pen, water bottle, and what not to bring into the silent block (laptop, unless it\u2019s an agreed writing tool).\n25. **After-action template for the organizer** \u2014 A one-page retro: start/end on time?, opt-outs, complaints, energy in the first session, and one change for next retreat.\n\nThese stay practical for a corporate setting: clear rules, an easy exit, and a clean handoff back into normal conversation.",
+       "reasoning_content": "I am preparing 25 ideas for posts, exercises, and handouts about silent morning retreats.",
+       "refusal": null
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 3446,
+     "completion_tokens": 964,
+     "total_tokens": 4500,
+     "prompt_tokens_details": {
+      "text_tokens": 3446,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1536
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 90,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     },
+     "num_sources_used": 0,
+     "cost_in_usd_ticks": 109120000
+    },
+    "system_fingerprint": "fp_c60958d81f66f847",
+    "service_tier": "default"
+   }
+  }
+ ]
+}

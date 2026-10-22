@@ -1,0 +1,9 @@
+CS03 claude-fable-5-1 turn 1 0.2211 end_turn 5311
+CS03 claude-fable-5-1 turn 2 0.326 end_turn 12382
+CS03 claude-fable-5-1 turn 3 0.4683 end_turn 15626
+CS03 claude-fable-5-1 turn 4 0.35 end_turn 10375
+CS03 claude-fable-5-1 turn 5 0.3229 end_turn 10675
+CS03 claude-fable-5-1 turn 6 0.2004 end_turn 4902
+CS03 claude-fable-5-1 turn 7 0.3264 end_turn 8265
+CS03 claude-fable-5-1 turn 8 0.3194 end_turn 5572
+DONE CS03 claude-fable-5-1 final artifact reached 2.5344

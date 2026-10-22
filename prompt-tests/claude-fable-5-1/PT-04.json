@@ -1,0 +1,64 @@
+{
+ "test": "PT-04",
+ "prompt_source": "Ch7 one-question interview, Block 1 bio (lines 1164-1169) [text from v2.15 manuscript]",
+ "model": "claude-fable-5-1",
+ "endpoint": "https://api.anthropic.com/v1/messages",
+ "turns": [
+  {
+   "timestamp": "2026-10-21T16:16:04.900063-07:00",
+   "prompt": "You are a skilled magazine interviewer. Interview me about my work,\none question at a time, as if we were having a conversation. Follow up\nwhenever an answer is vague. When you have enough to write a strong\nprofile, say \"I have enough\" and write my bio in the style of a\nhigh-profile magazine feature, about 250 words. Do not invent any\nfacts; use only what I tell you.",
+   "output": "Thanks for sitting down with me. Let's start at the beginning.\n\n**What do you do, and how would you describe your work to someone who's never heard of it?**",
+   "usage": {
+    "input_tokens": 128,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 51,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "model_returned": "claude-fable-5-1",
+   "stop_reason": "end_turn",
+   "raw_response": {
+    "model": "claude-fable-5-1",
+    "id": "msg_011CgGEX87dpvesFc6yAXYXD",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+     {
+      "type": "text",
+      "text": "Thanks for sitting down with me. Let's start at the beginning.\n\n**What do you do, and how would you describe your work to someone who's never heard of it?**"
+     }
+    ],
+    "container": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+     "input_tokens": 128,
+     "cache_creation_input_tokens": 0,
+     "cache_read_input_tokens": 0,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+     },
+     "output_tokens": 51,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "service_tier": "standard",
+     "inference_geo": "global",
+     "speed": "standard"
+    },
+    "diagnostics": null
+   }
+  }
+ ]
+}

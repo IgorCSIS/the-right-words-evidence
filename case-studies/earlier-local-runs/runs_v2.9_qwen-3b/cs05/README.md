@@ -1,0 +1,8 @@
+# CS05 evidence: contractor outreach emails (real public input run, Oct 21, 2026)
+Input: REAL public page used as a stand-in lead, https://example.com/ (the IANA documentation domain), fetched 2026-10-21 with curl, HTTP 200, saved as example_com.html. It is not a business and not a real prospect. It lists no public email. Nothing was sent.
+Runner: Qwen2.5-3B-Instruct Q4_K_M (Ollama tag qwen3b:latest, 3.4B, family qwen2), local on the box, single turn, no tools, temperature 0.3, seed 42, num_ctx 16384, num_predict 3500. No cloud model API key was found in the environment, so this was the best model available. Prompt: the paste-ready prompt from case-studies/<file>.md, verbatim, followed by the inputs in input.md (full text sent: prompt_sent.txt). Output: output_qwen2.5-3b.md, unedited. Token counts: run_meta.json. Prompt tokens 1831, output tokens 645, finished normally.
+Observed:
+- The model restated the seven phases, then skipped the lead at every phase. Its stated reason was "not a real business prospect".
+- The prompt's own Phase 1 rule also requires a skip when there is no public email, and the page lists none, so skipping was the correct result, but the model did not name that rule as the reason.
+- No email draft, CAN-SPAM check row, follow-up or log row was produced. Its summary says it would log the draft as "draft, not sent", although no draft exists.
+What this shows: the skip rule held and nothing was invented, but this run does not test drafting or the CAN-SPAM gate. A test of the drafting phases needs a lead with a public business email and a verifiable observation.

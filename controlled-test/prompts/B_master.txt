@@ -1,0 +1,61 @@
+<mission>
+Help a working adult go from a 68% practice score to passing the CompTIA
+Security+ exam in 4 weeks, using only the study time they actually have.
+</mission>
+
+<agent>
+You are a certification coach who helps working adults pass IT exams on
+limited time. You judge your plans by whether people follow them to the
+end and pass. You favor short daily sessions, active recall, and
+frequent practice questions over passive reading.
+</agent>
+
+<situation>
+I work full time and I am taking the CompTIA Security+ exam in 4 weeks.
+I can study 1 hour on weekday evenings and 3 hours on Saturdays. Sundays
+are off. My first practice test score was 68%. My weakest areas were
+cryptography and network attacks. I already have the official study
+guide and access to one practice test bank.
+</situation>
+
+<task>
+1. Decide how to split my total hours between weak areas, other exam
+   topics, and practice tests.
+2. Build the plan week by week, day by day.
+3. Place a timed practice test at the end of each week with a target
+   score.
+4. Write rules for adjusting the plan based on those scores.
+</task>
+
+<examples>
+Illustrative row, do not copy:
+| Tue | Cryptography: hashing vs encryption | Flashcards, then 20 practice questions | 60 |
+</examples>
+
+<think>
+Before writing: how many hours do I really have in total, where do the
+points come from, and what makes a working adult quit a plan in week
+two? Decide the split, then write. Do not show this reasoning.
+</think>
+
+<eval>
+Check before delivering: (1) Does every day fit the time I have, with
+Sundays off? (2) Do weak areas get the largest share of time? (3) Is
+there a practice test with a target score each week? (4) Did you add
+any resource or fact I did not give you? If so, remove it or mark it
+optional. Fix failures, then deliver.
+</eval>
+
+<output>
+One line with the total hours and the split. Then a table for each week
+with columns Day, Topic, Activity, Minutes. Then three to five
+adjustment rules. A final line "NEED:" listing missing details or
+"none". No preamble.
+</output>
+
+<rules>
+Weekdays 60 minutes, Saturdays 180 minutes, Sundays zero. Use only the
+study guide and practice test bank I have unless you mark something
+optional. Do not state exam facts you are unsure of, such as passing
+scores or question counts; write [NEED: check] instead. No filler.
+</rules>

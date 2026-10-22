@@ -1,0 +1,69 @@
+{
+ "test": "PT-02",
+ "prompt_source": "Ch4 The full prompt (lines 590-648) [text from v2.15 manuscript]",
+ "model": "claude-fable-5-1",
+ "endpoint": "https://api.anthropic.com/v1/messages",
+ "turns": [
+  {
+   "timestamp": "2026-10-21T16:15:40.946008-07:00",
+   "prompt": "<mission>\nGet a reply from a busy podcast host who has never heard of me,\nagreeing to a 15-minute call about being a guest.\n</mission>\n\n<agent>\nYou are a B2B email strategist who writes outreach for independent\nconsultants. You judge your work by reply rate. You favor short,\nspecific emails that ask for one small thing.\n</agent>\n\n<situation>\nI am a leadership coach with 12 years in tech, independent for two\nyears. I want to be a guest on Lead Track, which interviews engineering\nmanagers about career growth. The host, Sarah Chen, posted last week that\nshe is booking guests. I have listened to six episodes; my favorite\nwas her conversation with Marcus Webb on skip-level meetings because he admitted his first skip-levels made his managers feel spied on. I have never contacted her.\n</situation>\n\n<task>\n1. Identify the most relevant angle connecting my experience to her\n   audience.\n2. Write three subject lines under 50 characters.\n3. Write the email: one specific line about her show, one line on who\n   I am, one episode topic, one small ask.\n4. Write a follow-up for one week later.\n</task>\n\n<examples>\nIllustrative subject lines, do not copy:\n\"Your ep with Marcus Webb on skip-levels\"\n\"A topic your listeners asked about\"\n</examples>\n\n<think>\nBefore writing: what does this host need from a guest, what would make\nher skip this email in two seconds, and which of my experiences is\nmost unusual for her audience? Decide the angle, then write. Do not\nshow this reasoning.\n</think>\n\n<eval>\nCheck before delivering: (1) Could this go to any host? If so, make it\nspecific. (2) Is the ask answerable in one reply? (3) Is every fact in\nthe situation above? Remove anything invented. (4) Is the body under\n120 words? Fix failures, then deliver.\n</eval>\n\n<output>\nAngle (one sentence). Three numbered subject lines. Email in plain\ntext. Follow-up in plain text. A final line \"NEED:\" listing missing\ndetails or \"none\". No preamble.\n</output>\n\n<rules>\nBody under 120 words. One specific true compliment at most. Never\ninvent facts; write [NEED: detail] instead. No \"hope this finds you\nwell\". No exclamation marks. The ask is a 15-minute call.\n</rules>",
+   "output": "Angle: Sarah's show rewards guests who admit what went wrong, so position myself as the coach who sees the private version of those mistakes across many managers, not the polished conference version.\n\n1. Your Marcus Webb ep, from the coach's side\n2. What managers tell a coach, not a podcast\n3. A skip-level follow-up for Lead Track\n\nSubject: Your Marcus Webb ep, from the coach's side\n\nHi Sarah,\n\nMarcus Webb admitting his first skip-levels made his managers feel spied on was the most useful two minutes of the six Lead Track episodes I have listened to.\n\nI am a leadership coach, 12 years in tech, independent for the last two. [NEED: my role during those 12 years, e.g. EM or IC]\n\nProposed topic: the mistakes managers only admit to a coach, and the repair moves that actually work, using skip-levels as the running example.\n\nSaw you are booking guests. Would a 15-minute call next week work to see if this fits your list?\n\n[NEED: name]\n[NEED: site or LinkedIn link]\n\nFollow-up (one week later)\n\nSubject: Re: Your Marcus Webb ep, from the coach's side\n\nHi Sarah,\n\nFloating this back up in case it got buried. Still happy to do a 15-minute call on the \"mistakes managers only admit to a coach\" idea. If you are full for this round, a simple no is fine and I will stop here.\n\n[NEED: name]\n\nNEED: my role during the 12 years in tech; my name; a link to my site or LinkedIn; optionally one anonymized coaching example to strengthen the topic line.",
+   "usage": {
+    "input_tokens": 768,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1019,
+    "output_tokens_details": {
+     "thinking_tokens": 491
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "model_returned": "claude-fable-5-1",
+   "stop_reason": "end_turn",
+   "raw_response": {
+    "model": "claude-fable-5-1",
+    "id": "msg_011CgGEVMfQbJcdLK7h4gfvN",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+     {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "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"
+     },
+     {
+      "type": "text",
+      "text": "Angle: Sarah's show rewards guests who admit what went wrong, so position myself as the coach who sees the private version of those mistakes across many managers, not the polished conference version.\n\n1. Your Marcus Webb ep, from the coach's side\n2. What managers tell a coach, not a podcast\n3. A skip-level follow-up for Lead Track\n\nSubject: Your Marcus Webb ep, from the coach's side\n\nHi Sarah,\n\nMarcus Webb admitting his first skip-levels made his managers feel spied on was the most useful two minutes of the six Lead Track episodes I have listened to.\n\nI am a leadership coach, 12 years in tech, independent for the last two. [NEED: my role during those 12 years, e.g. EM or IC]\n\nProposed topic: the mistakes managers only admit to a coach, and the repair moves that actually work, using skip-levels as the running example.\n\nSaw you are booking guests. Would a 15-minute call next week work to see if this fits your list?\n\n[NEED: name]\n[NEED: site or LinkedIn link]\n\nFollow-up (one week later)\n\nSubject: Re: Your Marcus Webb ep, from the coach's side\n\nHi Sarah,\n\nFloating this back up in case it got buried. Still happy to do a 15-minute call on the \"mistakes managers only admit to a coach\" idea. If you are full for this round, a simple no is fine and I will stop here.\n\n[NEED: name]\n\nNEED: my role during the 12 years in tech; my name; a link to my site or LinkedIn; optionally one anonymized coaching example to strengthen the topic line."
+     }
+    ],
+    "container": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+     "input_tokens": 768,
+     "cache_creation_input_tokens": 0,
+     "cache_read_input_tokens": 0,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+     },
+     "output_tokens": 1019,
+     "output_tokens_details": {
+      "thinking_tokens": 491
+     },
+     "service_tier": "standard",
+     "inference_geo": "global",
+     "speed": "standard"
+    },
+    "diagnostics": null
+   }
+  }
+ ]
+}

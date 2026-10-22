@@ -1,0 +1,72 @@
+{
+ "test": "PT-01",
+ "prompt_source": "Ch3 CRAFT in practice, Example 1 (lines 327-341)",
+ "model": "grok-4.7",
+ "endpoint": "https://api.x.ai/v1/chat/completions",
+ "turns": [
+  {
+   "timestamp": "2026-10-21T15:31:52.958498-07:00",
+   "prompt": "CONTEXT: I run a two-person sourdough bakery in a college town. Most\ncustomers are students and faculty who visit on weekends. Starting\nMarch 3 we offer a weekday lunch special: soup and half a sandwich for\n$9, 11 a.m. to 2 p.m.\n\nROLE: You are a local-business copywriter who writes short, warm social\nposts that get people through the door.\n\nACTION: Write an Instagram caption announcing the lunch special.\n\nFORMAT: Under 80 words. One line hook, two short lines of detail, one\nline with the time and price. Up to three hashtags at the end.\n\nTONE: Friendly and a little playful, like the person behind the counter\nwho knows your order. No exclamation marks.",
+   "output": "The counter misses you on weekdays.\nStarting March 3, soup and half a sandwich are the reason to stop in.\nSame bread you already trust, just enough for the gap between classes.\n11 a.m. to 2 p.m., $9.\n#Sourdough #LunchSpecial #CollegeTown",
+   "usage": {
+    "prompt_tokens": 1403,
+    "completion_tokens": 64,
+    "total_tokens": 2602,
+    "prompt_tokens_details": {
+     "text_tokens": 1403,
+     "audio_tokens": 0,
+     "image_tokens": 0,
+     "cached_tokens": 1152
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1135,
+     "audio_tokens": 0,
+     "accepted_prediction_tokens": 0,
+     "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 82720000
+   },
+   "model_returned": "grok-4.7",
+   "raw_response": {
+    "id": "23c8fb4d-44a4-9d2a-a3df-414b84dc7992",
+    "object": "chat.completion",
+    "created": 1792621913,
+    "model": "grok-4.7",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "The counter misses you on weekdays.\nStarting March 3, soup and half a sandwich are the reason to stop in.\nSame bread you already trust, just enough for the gap between classes.\n11 a.m. to 2 p.m., $9.\n#Sourdough #LunchSpecial #CollegeTown",
+       "reasoning_content": "I'm drafting an Instagram caption for the bakery's weekday lunch special.\n\nI'm shaping the hook to sound like a friendly counter clerk who knows your order.\n\nThe hook is set: \"Weekdays just got a little softer around the edges.\" The two detail lines promise soup and half a sandwich for $9 from 11 to 2. Hashtags will stay generic since no bakery name was given.\n\nThe hook is now \"You already know how the bread tastes. Now it comes with soup.\" The detail lines promise enough food to get through afternoon classes without napping. The final line reads \"Eleven to two, nine dollars, weekdays.\" Hashtags will be #LunchSpecial #Sourdough #CollegeTown.\n\nThe caption is now set to five lines: a playful hook, two short detail lines, the time and price, and three hashtags. The final wording pairs your usual order with a smaller portion and a bowl beside it.\n\nThe final caption is set. It pairs your usual order with a smaller portion and a bowl beside it. The detail lines promise soup and half a sandwich built for the stretch between morning lecture and afternoon classes. The time and price line reads \"Weekdays, 11 a.m. to 2 p.m., $9.\" Hashtags are #SourdoughLunch #WeekdaySpecial #CollegeTown. The total is well under 80 words.\n\nThe \"your usual order\" hook assumes regulars already visit. Since most customers come on weekends, a new hook is better for drawing weekday traffic: \"Between classes is a perfectly good time for bread.\" The detail lines promise soup and half a sandwich with the same sourdough but a smaller commitment.\n\nThe final caption is set. The hook asks whether between classes is a fine time for good bread. The detail lines promise soup and half a sandwich with the same trusted sourdough, just enough for a real lunch. The time and price line reads 11 a.m. to 2 p.m., $9. Hashtags are #Sourdough #LunchSpecial #CollegeTown.",
+       "refusal": null
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1403,
+     "completion_tokens": 64,
+     "total_tokens": 2602,
+     "prompt_tokens_details": {
+      "text_tokens": 1403,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1152
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 1135,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     },
+     "num_sources_used": 0,
+     "cost_in_usd_ticks": 82720000
+    },
+    "system_fingerprint": "fp_c60958d81f66f847",
+    "service_tier": "default"
+   }
+  }
+ ]
+}

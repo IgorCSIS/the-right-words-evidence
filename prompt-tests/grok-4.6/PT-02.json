@@ -1,0 +1,72 @@
+{
+ "test": "PT-02",
+ "prompt_source": "Ch4 The full prompt (lines 590-648)",
+ "model": "grok-4.6",
+ "endpoint": "https://api.x.ai/v1/chat/completions",
+ "turns": [
+  {
+   "timestamp": "2026-10-21T16:13:06.855047-07:00",
+   "prompt": "<mission>\nGet a reply from a busy podcast host who has never heard of me,\nagreeing to a 15-minute call about being a guest.\n</mission>\n\n<agent>\nYou are a B2B email strategist who writes outreach for independent\nconsultants. You judge your work by reply rate. You favor short,\nspecific emails that ask for one small thing.\n</agent>\n\n<situation>\nI am a leadership coach with 12 years in tech, independent for two\nyears. I want to be a guest on Lead Track, which interviews engineering\nmanagers about career growth. The host, Sarah Chen, posted last week that\nshe is booking guests. I have listened to six episodes; my favorite\nwas her conversation with Marcus Webb on skip-level meetings because he admitted his first skip-levels made his managers feel spied on. I have never contacted her.\n</situation>\n\n<task>\n1. Identify the most relevant angle connecting my experience to her\n   audience.\n2. Write three subject lines under 50 characters.\n3. Write the email: one specific line about her show, one line on who\n   I am, one episode topic, one small ask.\n4. Write a follow-up for one week later.\n</task>\n\n<examples>\nIllustrative subject lines, do not copy:\n\"Your ep with Marcus Webb on skip-levels\"\n\"A topic your listeners asked about\"\n</examples>\n\n<think>\nBefore writing: what does this host need from a guest, what would make\nher skip this email in two seconds, and which of my experiences is\nmost unusual for her audience? Decide the angle, then write. Do not\nshow this reasoning.\n</think>\n\n<eval>\nCheck before delivering: (1) Could this go to any host? If so, make it\nspecific. (2) Is the ask answerable in one reply? (3) Is every fact in\nthe situation above? Remove anything invented. (4) Is the body under\n120 words? Fix failures, then deliver.\n</eval>\n\n<output>\nAngle (one sentence). Three numbered subject lines. Email in plain\ntext. Follow-up in plain text. A final line \"NEED:\" listing missing\ndetails or \"none\". No preamble.\n</output>\n\n<rules>\nBody under 120 words. One specific true compliment at most. Never\ninvent facts; write [NEED: detail] instead. No \"hope this finds you\nwell\". No exclamation marks. The ask is a 15-minute call.\n</rules>",
+   "output": "Angle: A leadership coach with 12 years in tech is a career-growth guest her engineering-manager audience rarely gets, and the Marcus Webb skip-level episode is the specific bridge.\n1. Marcus Webb and the spy problem\n2. Skip-levels that felt like spying\n3. 15 min on EMs after long tech years\n\nSarah,\n\nYour conversation with Marcus Webb on skip-level meetings stood out because he admitted his first skip-levels made his managers feel spied on.\n\nI am a leadership coach with 12 years in tech, independent for two years.\n\nThe episode I would do is career growth for engineering managers who have spent a long stretch in tech and are weighing what is next.\n\nWould you agree to a 15-minute call about my being a guest on Lead Track?\n\nSarah,\n\nI wrote last week asking for a 15-minute call about being a guest on Lead Track, after your Marcus Webb episode on skip-level meetings.\n\nAre you open to that call?\n\nNEED: a concrete story from the 12 years in tech or coaching; whether you were an engineering manager",
+   "usage": {
+    "prompt_tokens": 1160,
+    "completion_tokens": 224,
+    "total_tokens": 5898,
+    "prompt_tokens_details": {
+     "text_tokens": 1160,
+     "audio_tokens": 0,
+     "image_tokens": 0,
+     "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 4514,
+     "audio_tokens": 0,
+     "accepted_prediction_tokens": 0,
+     "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 299800000
+   },
+   "model_returned": "grok-4.6",
+   "raw_response": {
+    "id": "9e59738f-d4c9-9a50-badb-36ba0f5a69b2",
+    "object": "chat.completion",
+    "created": 1792624387,
+    "model": "grok-4.6",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "Angle: A leadership coach with 12 years in tech is a career-growth guest her engineering-manager audience rarely gets, and the Marcus Webb skip-level episode is the specific bridge.\n1. Marcus Webb and the spy problem\n2. Skip-levels that felt like spying\n3. 15 min on EMs after long tech years\n\nSarah,\n\nYour conversation with Marcus Webb on skip-level meetings stood out because he admitted his first skip-levels made his managers feel spied on.\n\nI am a leadership coach with 12 years in tech, independent for two years.\n\nThe episode I would do is career growth for engineering managers who have spent a long stretch in tech and are weighing what is next.\n\nWould you agree to a 15-minute call about my being a guest on Lead Track?\n\nSarah,\n\nI wrote last week asking for a 15-minute call about being a guest on Lead Track, after your Marcus Webb episode on skip-level meetings.\n\nAre you open to that call?\n\nNEED: a concrete story from the 12 years in tech or coaching; whether you were an engineering manager",
+       "reasoning_content": "I'm drafting outreach emails for a leadership coach to secure a guest spot on Lead Track.\n\nI'm mapping the exact structure: one sentence angle, three numbered subject lines under 50 characters, a body with one true compliment and a 15-minute call ask, plus a one-week follow-up. I'll flag any missing details with [NEED: detail].\n\nThe host is Sarah Chen. She interviews engineering managers about career growth and recently opened bookings. The angle connects the coach's experience to her audience. I'm avoiding generic pitches, long bodies, unclear asks, and irrelevant topics.\n\nI'm avoiding invented skip-level stories. The angle will instead connect the coach's 12 years in tech and current coaching to engineering managers' career growth.\n\nThe specific compliment will reference the Marcus Webb episode. Subject lines are being drafted around skip-level meetings and career growth topics.\n\nI'm weighing whether to propose a career-growth topic for engineering managers from the coach's perspective, using the skip-level episode as the hook. The situation lacks a unique coaching angle or story, so I'll flag that gap with [NEED: detail].\n\nI've decided not to claim skip-level experience in the email. I'm now drafting the actual message body.\n\nI've settled on the episode topic. It will be a true, grounded conversation about making the jump from a long tech career into independent coaching and leadership. This directly connects to the coach's background and her audience's career growth interests.\n\nThe angle now frames the coach's 12-year tech career and two years as an independent coach as a rare career-growth path for engineering managers. I'm refining the subject lines to be specific rather than generic, starting with a reference to her Marcus Webb skip-level episode.\n\nThe subject lines are now specific and under 50 characters. The first references Marcus Webb's skip-level admission. The second proposes guests run skip-levels without the spy feel. The third asks for a 15-minute call on skip-level meetings.\n\nThe email body opens with six episodes of Lead Track. It quotes Marcus Webb's admission about managers feeling spied on.\n\nI'm trimming the email to exactly one specific line about her show. The \"I listened to six episodes\" detail is a fact, not a compliment, so it will be removed to keep the body under 120 words.\n\nThe body will contain exactly one line about the show: the Marcus Webb quote. The coach's background is stated as a fact. I'm now choosing a true episode topic such as career paths for engineering managers considering independent work, or what 12 years in tech taught me about career growth.\n\nI've settled on the episode topic: \"career growth after a long stretch in tech, for engineering managers weighing what is next.\" This stays grounded in the coach's facts and avoids invented framing.\n\nI'm finalizing the email body. I'm weighing whether to mention her recent guest booking post as a hook, since that would be a true fact rather than a compliment. I'm also verifying that every fact in the situation is covered and that the ask can be answered with a simple yes or no.\n\nThe draft body is roughly 76 words, well under the 120-word limit. I'm now checking whether the proposed episode topic is invented.\n\nThe phrase \"weakening what is next\" is a slight stretch, but it connects the coach's departure from tech to her audience without inventing a personal story. I'm now adding the host's recent guest booking post as a true hook to make the ask more timely. The follow-up will reference that previous note.\n\nThe follow-up is now drafted. It references the Marcus Webb skip-level thread and asks if she is still booking guests. The episode topic still needs a sharper coaching or tech story to ground it, but no specific name or result is available yet.\n\nThe host needs a trustworthy guest with an original story and easy availability. The email still needs a concrete tech or coaching result that is unusual for engineering managers, plus confirmation of the episode topic.\n\nThe coach's most unusual angle is being an independent leader after 12 years in tech, which differs from current engineering managers. The subject lines are now under 50 characters, with the first two counting at 35 and 37 letters.\n\nThe third subject line is now \"Skip-levels that felt like spying,\" a specific hook drawn from the Marcus Webb episode. The generic \"Guest call on EM career growth\" option was dropped to avoid copying examples.\n\nThe subject lines are now finalized at 31, 30, and 34 characters. The email body will include \"Lead Track\" to keep the ask specific to her show. I am beginning to draft the actual message.",
+       "refusal": null
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1160,
+     "completion_tokens": 224,
+     "total_tokens": 5898,
+     "prompt_tokens_details": {
+      "text_tokens": 1160,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 512
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 4514,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     },
+     "num_sources_used": 0,
+     "cost_in_usd_ticks": 299800000
+    },
+    "system_fingerprint": "fp_e41c6060b2628547",
+    "service_tier": "default"
+   }
+  }
+ ]
+}

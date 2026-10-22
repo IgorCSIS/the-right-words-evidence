@@ -1,0 +1,64 @@
+{
+ "test": "PT-01",
+ "prompt_source": "Ch3 CRAFT in practice, Example 1 (lines 327-341) [text from v2.15 manuscript]",
+ "model": "claude-fable-5-1",
+ "endpoint": "https://api.anthropic.com/v1/messages",
+ "turns": [
+  {
+   "timestamp": "2026-10-21T16:15:38.656302-07:00",
+   "prompt": "CONTEXT: I run a two-person sourdough bakery in a college town. Most\ncustomers are students and faculty who visit on weekends. Starting\nMarch 3 we offer a weekday lunch special: soup and half a sandwich for\n$9, 11 a.m. to 2 p.m.\n\nROLE: You are a local-business copywriter who writes short, warm social\nposts that get people through the door.\n\nACTION: Write an Instagram caption announcing the lunch special.\n\nFORMAT: Under 80 words. One line hook, two short lines of detail, one\nline with the time and price. Up to three hashtags at the end.\n\nTONE: Friendly and a little playful, like the person behind the counter\nwho knows your order. No exclamation marks.",
+   "output": "Your afternoon lecture can wait. Lunch can't.\n\nStarting March 3, we're ladling up soup and half a sandwich on fresh sourdough, every weekday.\nStudy group welcome. Office hours too.\n\nWeekdays, 11 a.m. to 2 p.m., $9.\n\n#SourdoughLunch #CampusEats #SoupSeason",
+   "usage": {
+    "input_tokens": 245,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 121,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+   },
+   "model_returned": "claude-fable-5-1",
+   "stop_reason": "end_turn",
+   "raw_response": {
+    "model": "claude-fable-5-1",
+    "id": "msg_011CgGEVBsnn85hD6CdadB4W",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+     {
+      "type": "text",
+      "text": "Your afternoon lecture can wait. Lunch can't.\n\nStarting March 3, we're ladling up soup and half a sandwich on fresh sourdough, every weekday.\nStudy group welcome. Office hours too.\n\nWeekdays, 11 a.m. to 2 p.m., $9.\n\n#SourdoughLunch #CampusEats #SoupSeason"
+     }
+    ],
+    "container": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+     "input_tokens": 245,
+     "cache_creation_input_tokens": 0,
+     "cache_read_input_tokens": 0,
+     "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+     },
+     "output_tokens": 121,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "service_tier": "standard",
+     "inference_geo": "global",
+     "speed": "standard"
+    },
+    "diagnostics": null
+   }
+  }
+ ]
+}

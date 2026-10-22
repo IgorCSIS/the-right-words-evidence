@@ -1,0 +1,43 @@
+import os,json,base64,datetime,urllib.request,sys,mimetypes
+import fills2 as fills
+KEY=os.environ["ANTHROPIC_API_KEY"]; URL="https://api.anthropic.com/v1/messages"; MODEL="claude-fable-5-1"
+def call(msgs):
+    body=json.dumps({"model":MODEL,"max_tokens":16000,"messages":msgs}).encode()
+    req=urllib.request.Request(URL,body,{"x-api-key":KEY,"anthropic-version":"2023-06-01","content-type":"application/json"})
+    with urllib.request.urlopen(req,timeout=900) as r: return json.load(r)
+def once(msgs):
+    try: return call(msgs),None
+    except Exception as e:
+        err=str(e)
+        if hasattr(e,"read"):
+            try: err+=" "+e.read().decode()[:500]
+            except: pass
+        return None,err
+for tid in (sys.argv[1:] or list(fills.T)):
+    name,prompt,extra=fills.T[tid]
+    turns=extra if isinstance(extra,list) else [prompt]
+    msgs=[];rec={"test":tid,"prompt_source":name+" [text from v2.15 manuscript]","model":MODEL,"endpoint":URL,"turns":[]}
+    for i,p in enumerate(turns):
+        content=p
+        if i==0 and isinstance(extra,str):
+            b=base64.b64encode(open(extra,"rb").read()).decode()
+            content=[{"type":"image","source":{"type":"base64","media_type":"image/jpeg","data":b}},{"type":"text","text":p}]
+            rec["attachment"]=extra
+        msgs.append({"role":"user","content":content})
+        ts=datetime.datetime.now().astimezone().isoformat()
+        r,err=once(msgs)
+        if r is None:
+            r,err2=once(msgs); err=None if r else f"attempt1: {err} | attempt2: {err2}"
+        t={"timestamp":ts,"prompt":p}
+        if r is None: t["error"]=err; rec["turns"].append(t); break
+        out="".join(c.get("text","") for c in r["content"] if c["type"]=="text")
+        t.update(output=out,usage=r.get("usage"),model_returned=r.get("model"),stop_reason=r.get("stop_reason"),raw_response=r)
+        rec["turns"].append(t); msgs.append({"role":"assistant","content":out})
+    json.dump(rec,open(f"{tid}.json","w"),indent=1)
+    with open(f"{tid}.md","w") as f:
+        f.write(f"# {tid}: {name}\nModel: {MODEL}\n")
+        for i,t in enumerate(rec["turns"]):
+            f.write(f"\n## Turn {i+1} ({t['timestamp']})\n### Prompt sent\n```\n{t['prompt']}\n```\n")
+            if "error" in t: f.write(f"### ERROR\n{t['error']}\n")
+            else: f.write(f"### Usage\n{json.dumps(t['usage'])}\n### Stop reason: {t['stop_reason']}\n### Raw output\n\n{t['output']}\n")
+    print(tid,"done",[("ERR" if "error" in t else (t["usage"]["input_tokens"],t["usage"]["output_tokens"],t["stop_reason"])) for t in rec["turns"]],flush=True)

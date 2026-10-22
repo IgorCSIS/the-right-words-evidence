@@ -1,0 +1,72 @@
+{
+ "test": "PT-03",
+ "prompt_source": "Ch6 A meta prompt you can use today (lines 1081-1103)",
+ "model": "grok-4.6",
+ "endpoint": "https://api.x.ai/v1/chat/completions",
+ "turns": [
+  {
+   "timestamp": "2026-10-21T16:14:13.503159-07:00",
+   "prompt": "<mission>\nProduce a reusable prompt that reliably does turning my rough meeting notes into a client follow-up email for freelance bookkeepers who work with small restaurants.\n</mission>\n\n<task>\n1. Ask me up to five questions, one at a time, about the task,\n   audience, constraints, and what a great result looks like. Stop\n   asking when you have enough.\n2. Write the prompt with MASTER layers. Use [brackets] for inputs.\n3. Write three test inputs: typical, hard, and edge case.\n4. Predict how the prompt might fail on each and revise it to\n   prevent that.\n</task>\n\n<eval>\nThe prompt has a one-sentence mission, numbered steps, at least three\ncheckable eval criteria, and an exact output format. No layer is empty.\n</eval>\n\n<output>\nThe final prompt in a code block, then the three test inputs, then a\nlist of assumptions you made.\n</output>",
+   "output": "What tone should these follow-up emails use with small-restaurant clients\u2014warm and conversational (first-name, like a trusted local partner), or more formal and professional?",
+   "usage": {
+    "prompt_tokens": 834,
+    "completion_tokens": 35,
+    "total_tokens": 1705,
+    "prompt_tokens_details": {
+     "text_tokens": 834,
+     "audio_tokens": 0,
+     "image_tokens": 0,
+     "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 836,
+     "audio_tokens": 0,
+     "accepted_prediction_tokens": 0,
+     "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 61260000
+   },
+   "model_returned": "grok-4.6",
+   "raw_response": {
+    "id": "15c845d6-2b7b-9f6f-9984-b8bea191cffa",
+    "object": "chat.completion",
+    "created": 1792624453,
+    "model": "grok-4.6",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "What tone should these follow-up emails use with small-restaurant clients\u2014warm and conversational (first-name, like a trusted local partner), or more formal and professional?",
+       "reasoning_content": "I need to build a reusable prompt that converts rough meeting notes into client follow-up emails for freelance bookkeepers serving small restaurants.\n\nI will ask up to five clarifying questions about the task, audience, and desired outcome. Then I will draft a MASTER-layer prompt with bracketed inputs. I will create three test cases: typical, hard, and edge case. I will predict failure modes for each and revise the prompt to prevent them. The final deliverable must include a one-sentence mission, numbered steps, at least three checkable criteria, an exact output format, and no empty layers.\n\nI am clarifying the MASTER layer framework. I am unsure whether the acronym stands for Mission, Audience, Steps, Tone, Examples, and Result format, or a simpler structure like Mission, Audience, Steps, and Constraints.\n\nI have settled on the MASTER layer structure: Mission, Audience, Steps, Tone, Eval criteria, and Result format. I am now drafting the first clarifying question.\n\nI have identified six specific clarifying questions to ask. These cover tone, required content, length limits, branding, note quality, and how to handle missing information.\n\nI am adding two more clarifying angles: whether meetings are one-on-one or involve multiple attendees, and what specific bookkeeping topics the emails should cover. I will ask one question at a time and stop once I have enough context.",
+       "refusal": null
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 834,
+     "completion_tokens": 35,
+     "total_tokens": 1705,
+     "prompt_tokens_details": {
+      "text_tokens": 834,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 512
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 836,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     },
+     "num_sources_used": 0,
+     "cost_in_usd_ticks": 61260000
+    },
+    "system_fingerprint": "fp_e41c6060b2628547",
+    "service_tier": "default"
+   }
+  }
+ ]
+}

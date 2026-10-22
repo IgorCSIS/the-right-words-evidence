@@ -1,0 +1,1 @@
+Input (anonymized; based on the pattern in the real packs): Business A, a plumbing shop in an East County town. Observation verified on the site: the Services page shows a leftover template heading on each service block. No contact name on the site.

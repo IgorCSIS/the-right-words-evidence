@@ -1,0 +1,37 @@
+blind_id,task,condition,model,rep,c1,c2,c3,c4,c5,c6,body_words,total,judge_note,judge_cost
+X28,A,bare,claude-fable-5-1,1,0,1,1,0,2,0,175,4,Generic template; misses Dana/Ember; fake visit and results claim.,0.072998
+X12,A,bare,claude-fable-5-1,2,0,1,0,0,2,0,205,3,Generic template; invented visit; dual oversized ask; too long.,0.040844
+X27,A,bare,claude-fable-5-1,3,0,1,0,0,2,0,213,3,Generic template; misses Dana/shoebox; invented visit and results.,0.044606
+X30,A,craft,claude-fable-5-1,1,2,2,2,2,2,2,102,12,Names Dana and shoebox post; single 15-minute ask; clean.,0.024136
+X19,A,craft,claude-fable-5-1,2,2,2,2,2,2,2,105,12,Names Dana and the post; one 15-minute ask; short and paste-ready.,0.028242
+X06,A,craft,claude-fable-5-1,3,2,2,2,2,2,2,113,12,"Specific, one 15-min ask, short, no inventions or cliches.",0.023304
+X23,A,master,claude-fable-5-1,1,2,2,2,2,2,1,96,11,Clear 15-minute ask and specifics; preamble and subject options need cleanup.,0.02156
+X09,A,master,claude-fable-5-1,2,2,2,2,2,2,1,113,11,"Specific and concise; extra angle, options, and notes need cleanup.",0.026442
+X34,A,master,claude-fable-5-1,3,2,2,2,2,2,1,95,11,Specific 15-min ask; wrapper and three subjects need light cleanup.,0.025278
+X14,A,bare,grok-4.7,1,0,2,2,1,2,1,96,8,"Generic template; misses Dana, Ember, and shoebox post.",0.028466
+X11,A,bare,grok-4.7,2,0,2,2,2,2,1,106,9,"Generic template; no Dana, Ember, or shoebox reference.",0.026524
+X18,A,bare,grok-4.7,3,0,2,2,1,2,1,112,8,"Generic cafe template; misses Dana, Ember, and shoebox post; one invented software claim.",0.048096
+X29,A,craft,grok-4.7,1,2,2,2,2,2,2,68,12,Names Dana and the shoebox post; one 15-minute ask; no inventions.,0.017424
+X16,A,craft,grok-4.7,2,2,2,2,2,2,2,65,12,"Names Dana and Ember, cites shoebox post, one 15-minute ask, paste-ready.",0.015412
+X33,A,craft,grok-4.7,3,2,2,2,2,2,2,76,12,"Names Dana and shoebox post; one 15-min ask; short, clean, paste-ready.",0.016672
+X24,A,master,grok-4.7,1,2,2,2,2,2,1,59,11,"Solid specific ask; angle, subject options, and drafts need cleanup.",0.022236
+X00,A,master,grok-4.7,2,2,2,2,2,2,1,59,11,"Strong body; no subject line, preamble needs cleanup.",0.018924
+X07,A,master,grok-4.7,3,2,2,2,2,2,1,66,11,"Specific and concise, but no subject and extra scaffolding.",0.020432
+X15,B,bare,claude-fable-5-1,1,0,1,1,1,1,1,,5,"8-week generic plan; ignores daily limits, weak areas, and 4-week deadline.",0.02683
+X26,B,bare,claude-fable-5-1,2,0,1,1,1,1,1,,5,8-week plan ignores 60-min budget; weak areas not prioritized.,0.021546
+X20,B,bare,claude-fable-5-1,3,0,1,1,1,1,2,,6,8-week plan ignores time budget and does not prioritize weak areas.,0.026566
+X08,B,craft,claude-fable-5-1,1,2,2,1,2,2,2,,11,Week 1 lacks a timed test and weekly score targets.,0.032104
+X13,B,craft,claude-fable-5-1,2,2,2,1,2,2,1,,10,No week-1 targeted test; 750/900 is not 83%.,0.036048
+X10,B,craft,claude-fable-5-1,3,2,2,1,2,2,2,,11,Week 1 timed set has no score target.,0.025922
+X04,B,master,claude-fable-5-1,1,2,2,2,1,2,2,,11,"Fits time and priorities; malware, cloud, and other major topics missing.",0.047968
+X01,B,master,claude-fable-5-1,2,2,2,2,2,2,1,,11,Fits time and weekly targets; wrong repeated guide section.,0.030132
+X03,B,master,claude-fable-5-1,3,2,2,2,2,2,2,,12,"Fits time, prioritizes weak areas, weekly scored tests, full coverage.",0.021768
+X32,B,bare,grok-4.7,1,0,1,1,1,1,2,,6,"8-week generic plan; ignores 4-week, 60-min, Sunday-off limits.",0.015942
+X35,B,bare,grok-4.7,2,0,1,1,1,1,2,,6,10-week 90-min plan ignores budget and weak areas.,0.02302
+X22,B,bare,grok-4.7,3,0,1,1,1,1,2,,6,8-week generic plan; ignores 60-min days and weak areas.,0.018286
+X02,B,craft,grok-4.7,1,2,2,1,2,2,2,,11,"Full exams and score targets only in weeks 3-4, not every week.",0.039346
+X17,B,craft,grok-4.7,2,2,2,1,2,2,2,,11,Time and domains fit; weekly tests lack target scores.,0.031648
+X25,B,craft,grok-4.7,3,2,2,1,2,2,2,,11,"Weekly timed tests lack score targets; time, priorities, coverage, and format fit.",0.021834
+X21,B,master,grok-4.7,1,2,2,2,1,2,2,,11,Fits time and targets; major domains unnamed.,0.020468
+X05,B,master,grok-4.7,2,2,2,2,1,2,2,,11,"Time, priority, and weekly targets fit; some major domains unscheduled.",0.032558
+X31,B,master,grok-4.7,3,2,2,2,1,2,2,,11,Time and targets fit; major domains only implied.,0.022866

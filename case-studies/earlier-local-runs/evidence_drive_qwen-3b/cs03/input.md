@@ -1,0 +1,1 @@
+Input (illustrative): PROJECT_BRIEF "A small web tool: upload a CSV of leads, get one plain-text follow-up draft per lead, nothing is sent." STACK Python and FastAPI. AGENTS Claude Code and Cursor. STORAGE none.

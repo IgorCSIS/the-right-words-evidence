@@ -1,0 +1,2 @@
+CS03 grok-4.7 turn 1 0.0686 stop 5634
+DONE CS03_grok-4.7 None 0.0686

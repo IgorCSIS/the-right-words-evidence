@@ -1,0 +1,18 @@
+
+My inputs for the bracketed variables:
+TEST NOTE: every business, person, address, phone number and email below is FICTIONAL EXAMPLE DATA made up for this test. The domains use the reserved .example TLD, the phone numbers use the 555-01xx fictional range, and none of these are real prospects. Nothing will be sent.
+PAGE NOTE: you cannot open web pages in this chat, so I opened each site myself. The page text below is what I saw on 2026-10-21 at 7:40 PM PDT. Treat it as the page view checked today, and say in your notes that I checked it, not you.
+SENDER: Sam Rivera, Rivera Call Assist, Millbrook, 100 Example Street, Suite 4, Millbrook, OR 97000, (555) 010-0142 (FICTIONAL)
+OFFER: I set up text-back for missed calls, so a caller who reaches voicemail gets a text within a minute.
+LEADS (FICTIONAL EXAMPLE DATA):
+1 | Cedar Hollow Plumbing | contact: Dana (named on the About page) | trade: plumbing | town: Millbrook, OR | site: https://cedarhollowplumbing.example/contact | public business email: office@cedarhollowplumbing.example | page text seen: "Contact Us. Office hours Monday to Friday, 8 AM to 5 PM. Calls after 5 PM go to voicemail and we call back the next business day. Email office@cedarhollowplumbing.example."
+2 | Brightline Electric | contact: not public | trade: electrical | town: Millbrook, OR | site: https://brightlineelectric.example/ | public business email: hello@brightlineelectric.example | page text seen: "Licensed residential electricians. Leave a voicemail and we return all calls within one business day. hello@brightlineelectric.example"
+3 | Summit Ridge Roofing | contact: Lee | trade: roofing | town: Millbrook, OR | site: https://summitridgeroofing.example/ | public business email: info@summitridgeroofing.example | page text seen: "Free roof inspections. Call or email info@summitridgeroofing.example."
+4 | Oak and Iron Fence | contact: not public | trade: fencing | town: Ashford, OR | site: https://oakironfence.example/ | public business email: contact@oakironfence.example | page text seen: "Cedar and iron fences since 2009. Use the form below or email contact@oakironfence.example."
+5 | Valley Glass Repair | contact: not public | trade: glass | town: Millbrook, OR | site: https://valleyglassrepair.example/ | public business email: none listed | page text seen: "Call (555) 010-0199 for same-day glass repair."
+TOUCH_LOG (FICTIONAL):
+date_pt,time_pt,to,segment,subject,channel,variant,touch,outcome,notes
+2026-10-14,10:05,info@summitridgeroofing.example,roofing,Missed calls at Summit Ridge,email,A,1,sent,no reply yet
+2026-10-09,09:40,contact@oakironfence.example,fencing,Your contact form,email,A,1,opted out,replied no on 2026-10-10
+MAX_WORDS: 90. LINK_RULE: no links. DAILY_CAP: 10. FU1_DAYS: 3. FU2_DAYS: 7
+STYLE RULES: no em dashes or en dashes anywhere in the output, including notes and tables.

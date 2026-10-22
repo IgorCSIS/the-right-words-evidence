@@ -1,0 +1,4 @@
+CS03 grok-4.7 turn 1 0.0151 stop 118
+CS03 grok-4.7 turn 2 0.1356 stop 19681
+retry 0 ChunkedEncodingError: Response ended prematurely
+CS03 grok-4.7 turn 3 0.1922 stop 20659

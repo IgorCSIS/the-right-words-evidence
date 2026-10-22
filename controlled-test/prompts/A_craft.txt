@@ -1,0 +1,18 @@
+CONTEXT: I am a freelance bookkeeper with 8 years of experience. I work
+mostly with independent cafes and restaurants, cleaning up messy books
+and doing monthly reconciliation. I want to reach Dana Ruiz, who owns
+Ember Coffee, three cafe locations in Sacramento. Last week Dana posted
+on LinkedIn that tax season "nearly broke" her and that her receipts
+live in three shoeboxes. I have never contacted her.
+
+ROLE: You are a cold email copywriter who writes outreach for
+independent service providers and measures success by replies.
+
+ACTION: Write a cold email to Dana that refers to her post, says who I
+am in one line, and asks for a 15-minute call.
+
+FORMAT: One subject line under 50 characters, then the email body under
+120 words, plain text ready to paste.
+
+TONE: Warm and direct, like a peer who understands small business. Short
+sentences. No exclamation marks.

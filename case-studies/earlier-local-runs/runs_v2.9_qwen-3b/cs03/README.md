@@ -1,0 +1,9 @@
+# CS03 evidence: documentation-first vibecoding (real public input run, Oct 21, 2026)
+Input: REAL public dataset, Project Gutenberg catalog CSV https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv (downloaded 2026-10-21, 21,263,721 bytes, 79,634 rows, counted with Python csv). The brief (input.md) describes a small search and reading-list tool over that catalog. No code was written or run.
+Runner: Qwen2.5-3B-Instruct Q4_K_M (Ollama tag qwen3b:latest, 3.4B, family qwen2), local on the box, single turn, no tools, temperature 0.3, seed 42, num_ctx 16384, num_predict 3500. No cloud model API key was found in the environment, so this was the best model available. Prompt: the paste-ready prompt from case-studies/<file>.md, verbatim, followed by the inputs in input.md (full text sent: prompt_sent.txt). Output: output_qwen2.5-3b.md, unedited. Token counts: run_meta.json. Prompt tokens 2253, output tokens 3500, stopped at the token cap.
+Observed:
+- Phase 1 Discovery listed known facts and unknowns, and printed "Gate: I answer or accept each item", but did not stop there. It went on to Phases 2 and 3 without approval, against "Stop at each gate and wait for me".
+- Phase 2 PRD: FR-01 to FR-05 match the brief, each with a Given/When/Then line. FR-06 to FR-10 repeat two requirements ("refreshed by hand", "not uploaded") in alternation. Non-functional items were numbered FR-11 to FR-15 and their criteria are not testable ("does not cause any noticeable delay").
+- Phase 1 stated one fact that was not in the input: "a cacheable length of 1000 bytes and a cache lifetime of 1 hour".
+- Phase 3 used tables instead of mermaid diagrams (0 mermaid blocks) and then looped, repeating rows until the cap. No rules files (AGENTS.md, CLAUDE.md, .cursor rules) were reached.
+What this shows: the structure (phases, FR IDs, Given/When/Then) carried over; gate stops, diagrams and rules files did not on this model. No token saving can be claimed from this run.

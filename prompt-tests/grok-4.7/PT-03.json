@@ -1,0 +1,72 @@
+{
+ "test": "PT-03",
+ "prompt_source": "Ch6 A meta prompt you can use today (lines 1081-1103)",
+ "model": "grok-4.7",
+ "endpoint": "https://api.x.ai/v1/chat/completions",
+ "turns": [
+  {
+   "timestamp": "2026-10-21T15:33:52.087665-07:00",
+   "prompt": "<mission>\nProduce a reusable prompt that reliably does turning my rough meeting notes into a client follow-up email for freelance bookkeepers who work with small restaurants.\n</mission>\n\n<task>\n1. Ask me up to five questions, one at a time, about the task,\n   audience, constraints, and what a great result looks like. Stop\n   asking when you have enough.\n2. Write the prompt with MASTER layers. Use [brackets] for inputs.\n3. Write three test inputs: typical, hard, and edge case.\n4. Predict how the prompt might fail on each and revise it to\n   prevent that.\n</task>\n\n<eval>\nThe prompt has a one-sentence mission, numbered steps, at least three\ncheckable eval criteria, and an exact output format. No layer is empty.\n</eval>\n\n<output>\nThe final prompt in a code block, then the three test inputs, then a\nlist of assumptions you made.\n</output>",
+   "output": "What should a great follow-up email always include, and what should it never do or promise?",
+   "usage": {
+    "prompt_tokens": 1440,
+    "completion_tokens": 20,
+    "total_tokens": 2233,
+    "prompt_tokens_details": {
+     "text_tokens": 1440,
+     "audio_tokens": 0,
+     "image_tokens": 0,
+     "cached_tokens": 1152
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 773,
+     "audio_tokens": 0,
+     "accepted_prediction_tokens": 0,
+     "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 59100000
+   },
+   "model_returned": "grok-4.7",
+   "raw_response": {
+    "id": "3c81cca4-b63c-9c91-8266-e30f68b38751",
+    "object": "chat.completion",
+    "created": 1792622032,
+    "model": "grok-4.7",
+    "choices": [
+     {
+      "index": 0,
+      "message": {
+       "role": "assistant",
+       "content": "What should a great follow-up email always include, and what should it never do or promise?",
+       "reasoning_content": "I am designing a reusable prompt that converts rough meeting notes into client follow-up emails for freelance bookkeepers serving small restaurants.\n\nI will ask up to five clarifying questions first. Then I will build the prompt with MASTER layers and bracketed inputs. I will write three test cases and predict failure modes for each.\n\nI will ask the first clarifying question now. I am also considering what \"MASTER\" layers means\u2014whether it is a prompt engineering framework or a specific acronym.\n\nI now see MASTER as a six-layer framework: Mission, Audience, Steps, Tone, Evaluation, and Rules. Each layer will be filled to meet the evaluation criteria.\n\nI am weighing five critical questions: tone and structure of a great email, audience formality, required note details, constraints on length or forbidden content, and what inputs the user will provide. I will ask one at a time and stop when I have enough.",
+       "refusal": null
+      },
+      "finish_reason": "stop"
+     }
+    ],
+    "usage": {
+     "prompt_tokens": 1440,
+     "completion_tokens": 20,
+     "total_tokens": 2233,
+     "prompt_tokens_details": {
+      "text_tokens": 1440,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1152
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 773,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     },
+     "num_sources_used": 0,
+     "cost_in_usd_ticks": 59100000
+    },
+    "system_fingerprint": "fp_c60958d81f66f847",
+    "service_tier": "default"
+   }
+  }
+ ]
+}
